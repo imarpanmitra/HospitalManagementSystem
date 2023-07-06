@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: 
+              - content-type
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              
+server:
+  port : 8083
